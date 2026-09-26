@@ -202,6 +202,15 @@ body {
   transform: translateX(0);
 }
 
+@media (min-width: 1280px) {
+  body.drawer-open #main-content-area,
+  body.drawer-open .app-top-header {
+    margin-right: 430px;
+    max-width: calc(100% - 460px);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
+
 .stitch-card {
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }

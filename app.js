@@ -990,21 +990,38 @@ class RitmoAppController {
     const floatingBtn = document.getElementById("floating-drawer-btn");
     const closeBtn = document.getElementById("close-drawer-btn");
 
-    const openDrawer = () => drawer?.classList.add("open");
-    const closeDrawer = () => drawer?.classList.remove("open");
+    const openDrawer = () => {
+      drawer?.classList.add("open");
+      document.body.classList.add("drawer-open");
+    };
+    const closeDrawer = () => {
+      drawer?.classList.remove("open");
+      document.body.classList.remove("drawer-open");
+    };
 
-    openBtn?.addEventListener("click", openDrawer);
-    floatingBtn?.addEventListener("click", openDrawer);
+    // Open by default
+    openDrawer();
+
+    const toggleDrawer = () => {
+      if (drawer?.classList.contains("open")) {
+        closeDrawer();
+      } else {
+        openDrawer();
+      }
+    };
+
+    openBtn?.addEventListener("click", toggleDrawer);
+    floatingBtn?.addEventListener("click", toggleDrawer);
     closeBtn?.addEventListener("click", closeDrawer);
 
-    // Jump to screen from drawer
+    // Jump to screen from drawer (keep drawer open by default)
     const cards = document.querySelectorAll(".stitch-card[data-jump-screen]");
     cards.forEach(card => {
       card.addEventListener("click", () => {
         const slug = card.getAttribute("data-jump-screen");
         this.navigateTo(slug);
-        closeDrawer();
-        this.showToast(`Visualizando Stitch Screen: ${slug}`, "info");
+        // Keep open as requested
+        this.showToast(`Pantalla: ${slug}`, "info");
       });
     });
 
