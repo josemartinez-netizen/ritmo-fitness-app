@@ -918,56 +918,51 @@ class RitmoAppController {
     }
   }
 
-  // --- Simulator Desktop Controls (Zoom, Fullscreen, Reset) ---
+  // --- Academic & Deliverable Navigation Controls ---
   initSimulatorControls() {
-    const phoneContainer = document.getElementById("phone-container");
-    const zoom80 = document.getElementById("zoom-80");
-    const zoom90 = document.getElementById("zoom-90");
-    const zoom100 = document.getElementById("zoom-100");
-    const zoomBtns = [zoom80, zoom90, zoom100];
+    const tabPrototipo = document.getElementById("tab-prototipo-btn");
+    const tabInforme = document.getElementById("tab-informe-btn");
+    const viewPrototipo = document.getElementById("view-prototipo");
+    const viewInforme = document.getElementById("view-informe");
+    const printBtn = document.getElementById("print-report-btn");
+    const resetDemoBtn = document.getElementById("reset-demo-btn");
 
-    const applyZoom = (scale, activeBtn) => {
-      this.currentScale = scale;
-      if (phoneContainer && !this.isFullscreen) {
-        phoneContainer.style.transform = `scale(${scale})`;
-      }
-      zoomBtns.forEach(b => {
-        b?.classList.remove("bg-primary", "text-white", "font-semibold");
-        b?.classList.add("text-slate-300");
-      });
-      activeBtn?.classList.remove("text-slate-300");
-      activeBtn?.classList.add("bg-primary", "text-white", "font-semibold");
+    const showPrototipo = () => {
+      viewPrototipo?.classList.remove("hidden");
+      viewInforme?.classList.add("hidden");
+
+      tabPrototipo?.classList.remove("text-slate-300", "hover:bg-white/10");
+      tabPrototipo?.classList.add("bg-primary", "text-white", "font-semibold", "shadow-sm");
+
+      tabInforme?.classList.remove("bg-primary", "text-white", "font-semibold", "shadow-sm");
+      tabInforme?.classList.add("text-slate-300", "hover:bg-white/10");
+      window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
-    zoom80?.addEventListener("click", () => applyZoom(0.8, zoom80));
-    zoom90?.addEventListener("click", () => applyZoom(0.9, zoom90));
-    zoom100?.addEventListener("click", () => applyZoom(1, zoom100));
+    const showInforme = () => {
+      viewPrototipo?.classList.add("hidden");
+      viewInforme?.classList.remove("hidden");
 
-    // Fullscreen Toggle
-    const toggleFullscreenBtn = document.getElementById("toggle-fullscreen-btn");
-    toggleFullscreenBtn?.addEventListener("click", () => {
-      this.isFullscreen = !this.isFullscreen;
-      document.body.classList.toggle("fullscreen-mode", this.isFullscreen);
+      tabInforme?.classList.remove("text-slate-300", "hover:bg-white/10");
+      tabInforme?.classList.add("bg-primary", "text-white", "font-semibold", "shadow-sm");
 
-      if (this.isFullscreen) {
-        phoneContainer.style.transform = "none";
-        toggleFullscreenBtn.innerHTML = `
-          <span class="material-symbols-outlined text-[16px]">smartphone</span>
-          <span class="hidden md:inline">Vista Móvil</span>
-        `;
-        this.showToast("Modo Pantalla Completa activado", "info");
-      } else {
-        phoneContainer.style.transform = `scale(${this.currentScale})`;
-        toggleFullscreenBtn.innerHTML = `
-          <span class="material-symbols-outlined text-[16px]">fullscreen</span>
-          <span class="hidden md:inline">Pantalla Completa</span>
-        `;
-        this.showToast("Modo Simulador iPhone activado", "info");
-      }
+      tabPrototipo?.classList.remove("bg-primary", "text-white", "font-semibold", "shadow-sm");
+      tabPrototipo?.classList.add("text-slate-300", "hover:bg-white/10");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    tabPrototipo?.addEventListener("click", showPrototipo);
+    tabInforme?.addEventListener("click", showInforme);
+
+    // Print or Export to PDF
+    printBtn?.addEventListener("click", () => {
+      showInforme();
+      setTimeout(() => {
+        window.print();
+      }, 200);
     });
 
     // Reset Demo Data
-    const resetDemoBtn = document.getElementById("reset-demo-btn");
     resetDemoBtn?.addEventListener("click", () => {
       if (confirm("¿Deseas restablecer todos los datos demo a su estado inicial?")) {
         this.resetState();
