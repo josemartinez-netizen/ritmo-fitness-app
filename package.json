@@ -4,10 +4,11 @@
   "description": "Prototipo Funcional de Ritmo Fitness Tracker App - Stitch Project 2695682084981177594",
   "main": "index.html",
   "scripts": {
+    "dev": "serve -s . -l 3002",
     "start": "serve -s . -l 3002",
-    "dev": "serve -s . -l 3002"
+    "build": "echo 'Build complete'"
   },
-  "dependencies": {
+  "devDependencies": {
     "serve": "^14.2.4"
   },
   "keywords": [
