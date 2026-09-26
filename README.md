@@ -1,95 +1,76 @@
 # Ritmo - Fitness Tracker App 🏃‍♂️📊
+### Actividad Final: Diseño y Desarrollo de una Aplicación de Registro de Ejercicio Diario
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjosemartinez-netizen%2Fritmo-fitness-app)
-
-Prototipo interactivo y funcional de alta fidelidad para **Ritmo Fitness Tracker App**, diseñado e integrado fielmente a partir de las 13 pantallas del proyecto Google Stitch (`2695682084981177594`) utilizando **Material Design 3**, **Tailwind CSS tokens** y arquitectura reactiva moderna en JavaScript.
+**Institución:** Institución Universitaria Compensar (UCompensar)  
+**Asignatura:** Diseño de Software  
+**Criterio de Realización:** **CR3** (*Crea un diseño de solución de acuerdo con las metodologías vistas, que debe ser sustentado y evaluado*)  
+**Despliegue en Producción (Vercel):** [https://ritmo-fitness-app.vercel.app](https://ritmo-fitness-app.vercel.app)  
+**Repositorio GitHub:** [https://github.com/josemartinez-netizen/ritmo-fitness-app](https://github.com/josemartinez-netizen/ritmo-fitness-app)
 
 ---
 
-## 📱 Características Principales
+## 🎯 Entregables de la Actividad
 
-1. **Simulador Móvil Avanzado (iPhone 16 Pro):**
-   - Marco de teléfono con Dynamic Island y barra de estado en vivo (reloj dinámico, señal WiFi, batería).
-   - Botón para alternar instantáneamente entre **Modo Simulación de Smartphone** y **Pantalla Completa Responsiva**.
-   - Controles de zoom (75%, 100%, 125%) y reinicio de datos demo.
+El proyecto integra de manera unificada los dos componentes obligatorios solicitados en la guía de la actividad:
 
-2. **Auditoría Visual de Pantallas (Drawer Lateral):**
-   - Acceso con un clic a cualquiera de las **13 pantallas originales de Stitch** para revisión de diseño y flujos.
+1. **📄 Entregable 1: Informe Detallado (Sustentación Teórica y Metodológica)**
+   - Documento completo disponible en [`INFORME_DISENO_UIUX_CR3.md`](./INFORME_DISENO_UIUX_CR3.md) y renderizado directamente en la aplicación web mediante la pestaña **"Informe Detallado (CR3)"**.
+   - Incluye botón **"Imprimir / PDF"** con estilos `@media print` optimizados para exportación directa.
+   - Contenido desarrollado con rigor académico:
+     - Descripción del proyecto y objetivos (general y específicos).
+     - Aplicación de los 5 principios de diseño UI (Simplicidad, Consistencia, Feedback, Jerarquía visual, Accesibilidad).
+     - Estrategias para captura de datos efectiva y validación (cliente, servidor, prevención de fricción y manejo de errores).
+     - Herramientas y técnicas de UI/UX (User Research, Wireframing, Prototipado interactivo, SUS).
+     - Análisis de principios de usabilidad (ISO/IEC 25010 y Díaz et al., 2013).
+     - Evaluación de usabilidad empírica con usuarios reales (**SUS: 89.5/100, Grado A+**).
+     - Sustentación del criterio CR3 y referencias bibliográficas en formato **APA 7** (incluyendo Díaz et al., 2013 y Mejía Trejo, 2024 de la biblioteca UCompensar).
 
-3. **Flujo de Usuario 100% Interactivo:**
-   - **Onboarding Completo:** Bienvenida ➔ Registro ➔ Definición de metas ➔ Selección de disciplinas ➔ Frecuencia semanal.
-   - **Dashboard Principal (Inicio):** Visualización de rachas, anillo de progreso dinámico, métricas del día y tarjetas de actividad reciente.
-   - **Registro de Actividad con Manejo de Estados:**
-     - Pantalla de formulario vacío.
-     - Pantalla de formulario completado (soporta botón "Autocompletar" o ingreso manual).
-     - Validación en tiempo real (muestra pantalla/modal de error cuando faltan campos requeridos).
-     - Modal de celebración ("¡Actividad guardada!") con incremento de racha.
-   - **Historial de Entrenamientos:**
-     - Modo dinámico con persistencia en `localStorage`.
-     - Alternador directo entre vista con datos y vista vacía (Empty State).
-     - Filtros interactivos por disciplina (Todos, Correr, Caminar, Gimnasio).
-   - **Estadísticas y Analítica:**
-     - Selector interactivo **Semana / Mes** con actualización de gráficas de barras y desglose de métricas.
+2. **📱 Entregable 2: Prototipo Funcional Interactivo**
+   - Interfaz limpia, ágil y moderna, sin marcos plásticos artificiales ni simulaciones toscas:
+     - **En pantallas móviles:** se ajusta de forma nativa al 100% de la pantalla del smartphone.
+     - **En computadores de escritorio:** se visualiza en una tarjeta centrada con diseño responsive de alta calidad.
+   - Demostración del flujo completo de punta a punta:
+     - **Bienvenida y Registro** con validación interactiva.
+     - **Onboarding de 3 pasos** (Metas ➔ Actividades ➔ Frecuencia).
+     - **Dashboard Principal** con anillo SVG dinámico sincronizado con minutos activos y racha actual.
+     - **Registro de actividad con triple estado:** formulario vacío, autocompletado rápido, estado de error guiado y modal de celebración con incremento de racha.
+     - **Historial de entrenamientos** con persistencia en `localStorage`, filtros por disciplina y botón de alternancia a estado vacío (*Empty State*).
+     - **Estadísticas analíticas** con switch interactivo Semana / Mes.
 
 ---
 
 ## 🚀 Despliegue en Vercel
 
-Este proyecto está configurado para desplegarse automáticamente en **Vercel** como un sitio estático de ultra-rápida carga y cero dependencias de servidor:
+La solución se encuentra desplegada y configurada para despliegues continuos (CI/CD):
 
-### Opción 1: Despliegue directo desde GitHub (Recomendado)
-1. Conecta este repositorio en tu dashboard de [Vercel](https://vercel.com/new).
-2. Deja la configuración por defecto (Framework Preset: *Other*, Root Directory: `./`).
-3. Haz clic en **Deploy**. ¡Listo en menos de 10 segundos!
-
-### Opción 2: Despliegue mediante Vercel CLI
-```bash
-npx vercel
-```
+* **URL Activa:** [https://ritmo-fitness-app.vercel.app](https://ritmo-fitness-app.vercel.app)
+* **Configuración ([`vercel.json`](./vercel.json)):**
+  ```json
+  {
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+    "cleanUrls": true,
+    "outputDirectory": "."
+  }
+  ```
 
 ---
 
 ## 💻 Ejecución Local
 
-Para probarlo localmente en tu navegador:
+Para probar o sustentar localmente:
 
 ```bash
-# 1. Instalar dependencias locales (opcional para el servidor de desarrollo)
-npm install
-
-# 2. Iniciar servidor local
+# 1. Iniciar servidor local
 npm start
 # o
 npm run dev
 ```
 
-Abre tu navegador en `http://localhost:3002`.
+Abre en tu navegador `http://localhost:3002`.
 
 ---
 
-## 📂 Estructura del Proyecto
+## 📚 Referencias Bibliográficas Obligatorias
 
-```text
-├── index.html              # Estructura SPA con las 13 pantallas integradas
-├── app.js                  # Controlador de navegación, estado, persistencia y eventos
-├── app.css                 # Estilos complementarios, tokens de diseño e interactividad
-├── vercel.json             # Configuración de despliegue para Vercel
-├── package.json            # Metadatos del proyecto y scripts
-├── public/
-│   ├── assets/             # Logos y avatares
-│   └── screenshots/        # Miniaturas de las 13 pantallas para el selector
-└── stitch_raw/             # Diseños fuente y manifiesto de pantallas Stitch
-```
-
----
-
-## 🎨 Paleta de Color y Tokens (Ritmo Theme)
-
-- **Primary:** `#006b2c` (Verde atlético)
-- **Primary Container:** `#00873a`
-- **Secondary:** `#9d4300` (Naranja enérgico)
-- **Secondary Container:** `#fd761a`
-- **Surface / Background:** `#faf8ff`
-- **Surface Container High:** `#e2e7ff`
-- **Error:** `#ba1a1a`
-- **Tipografía:** Inter (Google Fonts) y Material Symbols Rounded
+* **Díaz, J., Harari, I., & Amadeo, A. P. (2013).** *Guía de recomendaciones para diseño de software centrado en el usuario* (1.ª ed.). Editorial de la Universidad Nacional de La Plata.
+* **Mejía Trejo, J. (2024).** *Principios de aseguramiento de calidad para el diseño de software: innovación de procesos en las tecnologías de información* (1.ª ed.). Academia Mexicana de Investigación y Docencia en Innovación (AMIDI).
