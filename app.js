@@ -936,6 +936,10 @@ class RitmoAppController {
 
       tabInforme?.classList.remove("bg-primary", "text-white", "font-semibold", "shadow-sm");
       tabInforme?.classList.add("text-slate-300", "hover:bg-white/10");
+      
+      if (window.location.hash !== "#prototipo") {
+        history.replaceState(null, null, "#prototipo");
+      }
       window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
@@ -948,11 +952,20 @@ class RitmoAppController {
 
       tabPrototipo?.classList.remove("bg-primary", "text-white", "font-semibold", "shadow-sm");
       tabPrototipo?.classList.add("text-slate-300", "hover:bg-white/10");
+
+      if (window.location.hash !== "#informe") {
+        history.replaceState(null, null, "#informe");
+      }
       window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
     tabPrototipo?.addEventListener("click", showPrototipo);
     tabInforme?.addEventListener("click", showInforme);
+
+    // Auto-open informe if URL has #informe
+    if (window.location.hash === "#informe" || window.location.hash === "#report") {
+      showInforme();
+    }
 
     // Print or Export to PDF
     printBtn?.addEventListener("click", () => {

@@ -221,6 +221,25 @@ body {
   transform: scale(0.97);
 }
 
+/* Academic Report Visibility States */
+#view-informe:not(.hidden) {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+#view-informe.hidden {
+  display: none !important;
+}
+
+#view-prototipo.hidden {
+  display: none !important;
+}
+
+#view-prototipo:not(.hidden) {
+  display: flex !important;
+}
+
 /* Printable Academic Report Styles */
 @media print {
   body {
