@@ -1,0 +1,23 @@
+{
+  "name": "ritmo-fitness-tracker-app",
+  "version": "1.0.0",
+  "description": "Prototipo Funcional de Ritmo Fitness Tracker App - Stitch Project 2695682084981177594",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s . -l 3002",
+    "dev": "serve -s . -l 3002"
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  },
+  "keywords": [
+    "fitness",
+    "tracker",
+    "ritmo",
+    "stitch",
+    "material-design-3",
+    "tailwind"
+  ],
+  "author": "Antigravity",
+  "license": "MIT"
+}

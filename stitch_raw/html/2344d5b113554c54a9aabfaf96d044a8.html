@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;font-family:'Inter',sans-serif;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-tint":"#006e2d","on-tertiary-fixed":"#0d1c2e","primary-container":"#00873a","secondary":"#9d4300","error":"#ba1a1a","on-surface-variant":"#3e4a3d","inverse-on-surface":"#eef0ff","on-error":"#ffffff","surface-container-lowest":"#ffffff","surface-bright":"#faf8ff","surface-variant":"#dae2fd","primary-fixed":"#7ffc97","on-background":"#131b2e","secondary-fixed-dim":"#ffb690","tertiary":"#4f5d71","background":"#faf8ff","tertiary-fixed-dim":"#b9c7df","on-secondary-fixed":"#341100","on-primary-fixed":"#002109","inverse-surface":"#283044","on-tertiary-fixed-variant":"#3a485b","surface-container-high":"#e2e7ff","on-surface":"#131b2e","on-secondary":"#ffffff","surface":"#faf8ff","surface-container":"#eaedff","error-container":"#ffdad6","surface-container-low":"#f2f3ff","secondary-container":"#fd761a","secondary-fixed":"#ffdbca","outline-variant":"#bdcaba","on-primary":"#ffffff","outline":"#6e7b6c","on-tertiary":"#ffffff","surface-dim":"#d2d9f4","on-secondary-container":"#5c2400","tertiary-container":"#67758b","on-primary-container":"#f7fff2","surface-container-highest":"#dae2fd","inverse-primary":"#62df7d","primary":"#006b2c","tertiary-fixed":"#d5e3fc","on-primary-fixed-variant":"#005320","on-error-container":"#93000a","on-tertiary-container":"#fdfcff","on-secondary-fixed-variant":"#783200","primary-fixed-dim":"#62df7d"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"1rem","space-md":"1rem","space-sm":"0.5rem","space-xs":"0.25rem","space-lg":"1.5rem","space-xl":"2rem","gutter":"1rem"},"fontFamily":{"label-sm":["Inter"],"headline-md":["Inter"],"label-md":["Inter"],"caption":["Inter"],"body-lg":["Inter"],"title-md":["Inter"],"display-lg":["Inter"],"body-md":["Inter"],"headline-lg":["Inter"]},"fontSize":{"label-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"caption":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"500"}],"title-md":["18px",{"lineHeight":"24px","fontWeight":"600"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}}</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-on-background/40 backdrop-blur-sm min-h-screen flex flex-col justify-end"><div aria-label="Cerrar modal" class="fixed inset-0 z-0" onclick="history.back()"></div><div class="relative z-10 w-full bg-surface-container-lowest rounded-t-[24px] shadow-[0_-8px_32px_rgba(15,23,42,0.12)] flex flex-col max-h-[813px] pb-safe"><div class="w-full flex justify-center pt-3 pb-1"><div class="w-10 h-1 bg-outline-variant/60 rounded-full"></div></div><div class="h-14 px-gutter flex items-center justify-between"><h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Registrar actividad</h2><button aria-label="Cerrar" class="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" onclick="history.back()" type="button"><span class="material-symbols-rounded text-2xl">close</span></button></div><main class="flex-1 flex flex-col relative w-full overflow-y-auto px-gutter py-space-sm bg-surface-container-lowest"><div class="flex flex-col w-full pb-6 space-y-5">
+<!-- Motivational Prompt / Micro-copy -->
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-rounded text-primary text-xl">bolt</span>
+<p class="font-label-md text-label-md text-on-surface">¿Qué entrenaste hoy, parcero?</p>
+</div>
+<span class="font-caption text-caption text-secondary font-semibold bg-secondary-fixed/50 px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-rounded text-sm" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+      Racha activa
+    </span>
+</div>
+<!-- 1. Exercise Type Horizontal Scroll -->
+<div class="flex flex-col space-y-2">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Tipo de actividad</span>
+<span class="font-caption text-caption text-primary font-medium">Toque para cambiar</span>
+</div>
+<div class="flex space-x-3 overflow-x-auto pb-2 pt-1 -mx-margin px-margin no-scrollbar" id="activity-selector">
+<!-- Correr (Preselected) -->
+<button class="activity-chip flex-shrink-0 relative flex items-center space-x-2.5 bg-primary text-on-primary px-4 py-3 rounded-full shadow-md min-h-[48px] transition-all" data-activity="correr" type="button">
+<span class="material-symbols-rounded text-xl" style="font-variation-settings: 'FILL' 1;">directions_run</span>
+<span class="font-label-md text-label-md font-semibold">Correr</span>
+<span class="absolute -top-2 right-2 bg-secondary text-on-secondary font-caption text-[10px] leading-tight px-1.5 py-0.5 rounded-full shadow-sm font-bold tracking-tight">Último</span>
+</button>
+<!-- Caminar -->
+<button class="activity-chip flex-shrink-0 flex items-center space-x-2.5 bg-surface-container text-on-surface hover:bg-surface-container-high px-4 py-3 rounded-full min-h-[48px] transition-all" data-activity="caminar" type="button">
+<span class="material-symbols-rounded text-xl text-on-surface-variant">directions_walk</span>
+<span class="font-label-md text-label-md font-medium">Caminar</span>
+</button>
+<!-- Bicicleta -->
+<button class="activity-chip flex-shrink-0 flex items-center space-x-2.5 bg-surface-container text-on-surface hover:bg-surface-container-high px-4 py-3 rounded-full min-h-[48px] transition-all" data-activity="bicicleta" type="button">
+<span class="material-symbols-rounded text-xl text-on-surface-variant">directions_bike</span>
+<span class="font-label-md text-label-md font-medium">Bicicleta</span>
+</button>
+<!-- Gimnasio -->
+<button class="activity-chip flex-shrink-0 flex items-center space-x-2.5 bg-surface-container text-on-surface hover:bg-surface-container-high px-4 py-3 rounded-full min-h-[48px] transition-all" data-activity="gimnasio" type="button">
+<span class="material-symbols-rounded text-xl text-on-surface-variant">fitness_center</span>
+<span class="font-label-md text-label-md font-medium">Gimnasio</span>
+</button>
+<!-- Natación -->
+<button class="activity-chip flex-shrink-0 flex items-center space-x-2.5 bg-surface-container text-on-surface hover:bg-surface-container-high px-4 py-3 rounded-full min-h-[48px] transition-all" data-activity="natacion" type="button">
+<span class="material-symbols-rounded text-xl text-on-surface-variant">pool</span>
+<span class="font-label-md text-label-md font-medium">Natación</span>
+</button>
+<!-- Yoga -->
+<button class="activity-chip flex-shrink-0 flex items-center space-x-2.5 bg-surface-container text-on-surface hover:bg-surface-container-high px-4 py-3 rounded-full min-h-[48px] transition-all" data-activity="yoga" type="button">
+<span class="material-symbols-rounded text-xl text-on-surface-variant">self_improvement</span>
+<span class="font-label-md text-label-md font-medium">Yoga</span>
+</button>
+</div>
+</div>
+<!-- 2. Duración Stepper Card -->
+<div class="bg-surface-container-low rounded-2xl p-4 shadow-sm flex flex-col items-center justify-center relative overflow-hidden">
+<div class="w-full flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium flex items-center gap-1.5">
+<span class="material-symbols-rounded text-base text-primary">timer</span>
+        Duración
+      </span>
+<span class="font-caption text-caption text-on-surface-variant">Tiempo estimado</span>
+</div>
+<div class="w-full flex items-center justify-between py-2">
+<!-- -5 min button -->
+<button aria-label="Disminuir 5 minutos" class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-lowest text-on-surface shadow-sm active:scale-95 transition-transform" id="btn-minus-dur" type="button">
+<span class="font-headline-md text-headline-md font-bold text-on-surface-variant">-5</span>
+</button>
+<!-- Large Center Readout -->
+<div class="flex items-baseline space-x-1.5 select-none">
+<span class="font-display-lg text-display-lg text-on-surface tracking-tight font-bold" id="dur-val">30</span>
+<span class="font-title-md text-title-md text-on-surface-variant font-semibold">min</span>
+</div>
+<!-- +5 min button -->
+<button aria-label="Aumentar 5 minutos" class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-lowest text-primary shadow-sm active:scale-95 transition-transform" id="btn-plus-dur" type="button">
+<span class="font-headline-md text-headline-md font-bold text-primary">+5</span>
+</button>
+</div>
+<!-- Micro-progress / feedback indicator -->
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-1 overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-300" id="dur-progress" style="width: 50%;"></div>
+</div>
+</div>
+<!-- 3. Distancia Metric Card (Contextual for Correr) -->
+<div class="bg-surface-container-low rounded-2xl p-4 shadow-sm flex items-center justify-between transition-all" id="distance-container">
+<div class="flex items-center space-x-3">
+<div class="w-11 h-11 rounded-xl bg-primary-container/10 flex items-center justify-center text-primary">
+<span class="material-symbols-rounded text-2xl">straighten</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant font-medium">Distancia recorrida</p>
+<p class="font-caption text-caption text-outline">Medición por GPS o manual</p>
+</div>
+</div>
+<div class="flex items-center space-x-2 bg-surface-container-lowest px-3.5 py-2 rounded-xl shadow-inner">
+<input class="w-14 font-headline-md text-headline-md font-bold text-on-surface bg-transparent text-right outline-none p-0 focus:text-primary" id="input-dist" min="0" step="0.1" type="number" value="4.2"/>
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">km</span>
+</div>
+</div>
+<!-- 4. Intensidad Segmented Control -->
+<div class="flex flex-col space-y-2">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Intensidad percibida</span>
+<span class="font-caption text-caption text-primary font-medium" id="intensity-feedback">Ritmo constante</span>
+</div>
+<div class="bg-surface-container-low p-1.5 rounded-2xl flex space-x-1.5 shadow-sm">
+<button class="intensity-btn flex-1 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant font-medium min-h-[44px] flex items-center justify-center space-x-1.5 transition-all" data-intensity="baja" type="button">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+<span>Baja</span>
+</button>
+<button class="intensity-btn flex-1 py-2.5 rounded-xl font-label-md text-label-md bg-primary text-on-primary font-semibold shadow-sm min-h-[44px] flex items-center justify-center space-x-1.5 transition-all" data-intensity="media" type="button">
+<span class="w-2 h-2 rounded-full bg-primary-fixed"></span>
+<span>Media</span>
+</button>
+<button class="intensity-btn flex-1 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant font-medium min-h-[44px] flex items-center justify-center space-x-1.5 transition-all" data-intensity="alta" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Alta</span>
+</button>
+</div>
+</div>
+<!-- 5. Fecha y Hora Row Card -->
+<div class="bg-surface-container-low rounded-2xl p-4 shadow-sm flex items-center justify-between">
+<div class="flex items-center space-x-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-rounded text-xl">event</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Momento del registro</p>
+<p class="font-title-md text-title-md font-semibold text-on-surface">Hoy, 6:30 p. m.</p>
+</div>
+</div>
+<button aria-label="Editar fecha y hora" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-rounded text-xl">edit</span>
+</button>
+</div>
+<!-- 6. Collapsed Section: Más Detalles -->
+<div class="bg-surface-container-low rounded-2xl p-4 shadow-sm transition-all duration-200">
+<button aria-expanded="false" class="w-full flex items-center justify-between text-left min-h-[36px]" id="toggle-details" type="button">
+<div class="flex items-center space-x-2.5">
+<span class="material-symbols-rounded text-primary text-xl">tune</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Más detalles (notas, ritmo cardíaco)</span>
+</div>
+<span class="material-symbols-rounded text-on-surface-variant transition-transform duration-200" id="chevron-details">expand_more</span>
+</button>
+<div class="hidden flex-col space-y-3 pt-3" id="details-content">
+<!-- Heart Rate Quick Field -->
+<div class="flex items-center justify-between bg-surface-container-lowest p-3 rounded-xl shadow-inner">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-rounded text-error text-xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Pulsaciones medias</span>
+</div>
+<div class="flex items-center space-x-1.5">
+<input class="w-12 text-right font-title-md text-title-md font-bold text-on-surface outline-none bg-transparent" placeholder="142" type="number"/>
+<span class="font-caption text-caption text-on-surface-variant font-medium">ppm</span>
+</div>
+</div>
+<!-- Notes Textarea -->
+<div class="relative">
+<textarea class="w-full bg-surface-container-lowest text-on-surface rounded-xl p-3 font-body-md text-body-md outline-none focus:ring-1 focus:ring-primary shadow-inner resize-none placeholder:text-outline-variant" id="notes-textarea" maxlength="280" placeholder="Añade notas o sensaciones de tu entrenamiento..." rows="3"></textarea>
+<div class="w-full flex justify-end mt-1 px-1">
+<span class="font-caption text-caption text-outline" id="notes-counter">0 / 280</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 7. Sticky Bottom Action -->
+<div class="pt-2">
+<button class="w-full h-[52px] bg-primary active:bg-primary-container text-on-primary rounded-xl font-label-md text-label-md font-semibold flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl active:scale-[0.99] transition-all" id="save-btn" type="button">
+<span class="material-symbols-rounded text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Guardar actividad</span>
+</button>
+<p class="font-caption text-caption text-center text-outline mt-2.5">
+      Se sumará automáticamente a tus metas semanales de Ritmo
+    </p>
+</div>
+</div>
+<script>
+  (function () {
+    // 1. Duration Stepper
+    let duration = 30;
+    const durValEl = document.getElementById('dur-val');
+    const durProgressEl = document.getElementById('dur-progress');
+    const btnMinus = document.getElementById('btn-minus-dur');
+    const btnPlus = document.getElementById('btn-plus-dur');
+
+    function updateDuration(val) {
+      duration = Math.max(5, Math.min(180, val));
+      if (durValEl) durValEl.textContent = duration;
+      if (durProgressEl) {
+        const pct = Math.min(100, Math.round((duration / 60) * 100));
+        durProgressEl.style.width = pct + '%';
+      }
+    }
+
+    if (btnMinus) {
+      btnMinus.addEventListener('click', () => updateDuration(duration - 5));
+    }
+    if (btnPlus) {
+      btnPlus.addEventListener('click', () => updateDuration(duration + 5));
+    }
+
+    // 2. Exercise Selection
+    const activityChips = document.querySelectorAll('.activity-chip');
+    const distanceContainer = document.getElementById('distance-container');
+
+    activityChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        activityChips.forEach(c => {
+          c.classList.remove('bg-primary', 'text-on-primary', 'shadow-md');
+          c.classList.add('bg-surface-container', 'text-on-surface');
+          const badge = c.querySelector('span.absolute');
+          if (badge) badge.classList.add('hidden');
+          const icon = c.querySelector('.material-symbols-rounded');
+          if (icon) {
+            icon.style.fontVariationSettings = "'FILL' 0";
+            icon.classList.add('text-on-surface-variant');
+          }
+        });
+
+        chip.classList.add('bg-primary', 'text-on-primary', 'shadow-md');
+        chip.classList.remove('bg-surface-container', 'text-on-surface');
+        const badge = chip.querySelector('span.absolute');
+        if (badge) badge.classList.remove('hidden');
+        const activeIcon = chip.querySelector('.material-symbols-rounded');
+        if (activeIcon) {
+          activeIcon.style.fontVariationSettings = "'FILL' 1";
+          activeIcon.classList.remove('text-on-surface-variant');
+        }
+
+        const act = chip.dataset.activity;
+        // Distance visible only for running, cycling or walking
+        if (distanceContainer) {
+          if (act === 'correr' || act === 'bicicleta' || act === 'caminar') {
+            distanceContainer.classList.remove('hidden');
+          } else {
+            distanceContainer.classList.add('hidden');
+          }
+        }
+      });
+    });
+
+    // 3. Intensity Segments
+    const intensityBtns = document.querySelectorAll('.intensity-btn');
+    const intensityFeedback = document.getElementById('intensity-feedback');
+    const intensityTexts = {
+      baja: 'Poco esfuerzo • Recuperación',
+      media: 'Ritmo constante • Zona aeróbica',
+      alta: 'Esfuerzo máximo • Rango anaeróbico'
+    };
+
+    intensityBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        intensityBtns.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-sm');
+          b.classList.add('text-on-surface-variant', 'font-medium');
+        });
+        btn.classList.add('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-sm');
+        btn.classList.remove('text-on-surface-variant', 'font-medium');
+
+        const mode = btn.dataset.intensity;
+        if (intensityFeedback && intensityTexts[mode]) {
+          intensityFeedback.textContent = intensityTexts[mode];
+        }
+      });
+    });
+
+    // 4. Accordion Toggle
+    const toggleBtn = document.getElementById('toggle-details');
+    const detailsContent = document.getElementById('details-content');
+    const chevron = document.getElementById('chevron-details');
+
+    if (toggleBtn && detailsContent && chevron) {
+      toggleBtn.addEventListener('click', () => {
+        const isHidden = detailsContent.classList.contains('hidden');
+        if (isHidden) {
+          detailsContent.classList.remove('hidden');
+          detailsContent.classList.add('flex');
+          chevron.classList.add('rotate-180');
+          toggleBtn.setAttribute('aria-expanded', 'true');
+        } else {
+          detailsContent.classList.add('hidden');
+          detailsContent.classList.remove('flex');
+          chevron.classList.remove('rotate-180');
+          toggleBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    // 5. Notes character count
+    const notesInput = document.getElementById('notes-textarea');
+    const counter = document.getElementById('notes-counter');
+    if (notesInput && counter) {
+      notesInput.addEventListener('input', (e) => {
+        const len = e.target.value.length;
+        counter.textContent = `${len} / 280`;
+      });
+    }
+
+    // 6. Save button feedback
+    const saveBtn = document.getElementById('save-btn');
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        saveBtn.innerHTML = `
+          <span class="material-symbols-rounded animate-spin text-xl">progress_activity</span>
+          <span>Guardando...</span>
+        `;
+        setTimeout(() => {
+          saveBtn.classList.remove('bg-primary');
+          saveBtn.classList.add('bg-primary-container');
+          saveBtn.innerHTML = `
+            <span class="material-symbols-rounded text-xl" style="font-variation-settings: 'FILL' 1;">check</span>
+            <span>¡Excelente sesión registrada!</span>
+          `;
+          setTimeout(() => {
+            if (window.history && window.history.length > 1) {
+              window.history.back();
+            }
+          }, 800);
+        }, 600);
+      });
+    }
+  })();
+</script></main></div></body></html>

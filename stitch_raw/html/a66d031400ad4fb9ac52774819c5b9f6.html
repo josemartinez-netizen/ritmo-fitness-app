@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-surface-variant": "#3e4a3d",
+          "on-primary-container": "#f7fff2",
+          "surface-tint": "#006e2d",
+          "on-secondary-fixed": "#341100",
+          "inverse-on-surface": "#eef0ff",
+          "surface-variant": "#dae2fd",
+          "secondary-container": "#fd761a",
+          "background": "#faf8ff",
+          "secondary": "#9d4300",
+          "outline": "#6e7b6c",
+          "on-secondary-fixed-variant": "#783200",
+          "on-tertiary-fixed": "#0d1c2e",
+          "surface-bright": "#faf8ff",
+          "tertiary-container": "#67758b",
+          "inverse-primary": "#62df7d",
+          "on-primary": "#ffffff",
+          "on-tertiary": "#ffffff",
+          "surface-container-low": "#f2f3ff",
+          "on-primary-fixed-variant": "#005320",
+          "surface-container-lowest": "#ffffff",
+          "on-surface": "#131b2e",
+          "on-secondary-container": "#5c2400",
+          "primary-fixed-dim": "#62df7d",
+          "primary-container": "#00873a",
+          "outline-variant": "#bdcaba",
+          "error": "#ba1a1a",
+          "tertiary": "#4f5d71",
+          "tertiary-fixed-dim": "#b9c7df",
+          "on-primary-fixed": "#002109",
+          "surface-container": "#eaedff",
+          "inverse-surface": "#283044",
+          "on-error-container": "#93000a",
+          "surface-container-highest": "#dae2fd",
+          "secondary-fixed-dim": "#ffb690",
+          "secondary-fixed": "#ffdbca",
+          "primary-fixed": "#7ffc97",
+          "surface-dim": "#d2d9f4",
+          "tertiary-fixed": "#d5e3fc",
+          "error-container": "#ffdad6",
+          "primary": "#006b2c",
+          "on-secondary": "#ffffff",
+          "on-background": "#131b2e",
+          "on-tertiary-fixed-variant": "#3a485b",
+          "surface": "#faf8ff",
+          "surface-container-high": "#e2e7ff",
+          "on-error": "#ffffff",
+          "on-tertiary-container": "#fdfcff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-md": "1rem",
+          "space-sm": "0.5rem",
+          "space-lg": "1.5rem",
+          "margin": "1rem",
+          "gutter": "1rem",
+          "space-xs": "0.25rem",
+          "space-xl": "2rem"
+        },
+        "fontFamily": {
+          "headline-lg": ["Inter"],
+          "title-md": ["Inter"],
+          "label-md": ["Inter"],
+          "label-sm": ["Inter"],
+          "headline-md": ["Inter"],
+          "display-lg": ["Inter"],
+          "body-md": ["Inter"],
+          "caption": ["Inter"],
+          "body-lg": ["Inter"]
+        },
+        "fontSize": {
+          "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+          "title-md": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+          "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+          "label-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "headline-md": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "display-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "caption": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+          "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "500"}]
+        }
+      }
+    }
+  }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}.bottom-fab{bottom:calc(5rem + env(safe-area-inset-bottom,0px));}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen antialiased"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Ritmo Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WHRb4d7pdWmnXRpgGMj-zYI_V6iiWDV18B21bqRYAuvd5VRhtY0BDVG_roWpi72789IZQIiv8O3nkTkbGyQP8kesEa4-wLSvcMH8hmyEYjTuJ2RruplcdXZtDCKUMIWfAO13OE6ZqxfqvesYg0-JmwZS3n8Jj1mCI8WntIUGa3nLmLS9YcuxfQNctcbGTFkpURUXx4oUocYJV8JaVl0YU0OxEixI4P1ZXxQp04ZFq6JKAmae-qW1pUvQ"/><span class="font-title-md text-title-md text-on-surface tracking-tight">Ritmo</span></div><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md text-on-surface-variant hidden sm:inline">Inicio</span><button class="w-11 h-11 rounded-full flex items-center justify-center p-0.5 focus:outline-none focus:ring-2 focus:ring-primary" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDweCFkfciscuocRq2s-ve5B91hY2hW18Si9GkGaEvU2Mzj3-Pdn87zQ4wtJdVAxu9V9zMaZUkZ4BGk1oMvm0RZk9PtDCfY-bSCA-o99_I9t-hJRqhruAMQs6iR4hFwRRy8RWF8o7WNW1bHyteBecyO62dtyNL_vY1SCwwoHeIXnGEk4JqeecTH9I3zIbvXtS3VR5xua2MmifGd5CB8FB-YDOQ6D0b9Vm6SW-k_XJskZkj9U62uNOD8"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-36 bg-surface min-h-screen px-space-md"><div class="flex flex-col w-full gap-space-lg pb-6">
+<!-- Header & Temporal Controls -->
+<div class="flex flex-col gap-space-sm pt-2">
+<div class="flex items-center justify-between">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Estadísticas</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Tu progreso y constancia deportiva</p>
+</div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">insights</span>
+</div>
+</div>
+<!-- Period & Segmented Control -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-sm mt-1">
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant text-label-sm font-label-sm self-start">
+<span class="material-symbols-outlined text-[18px] text-primary">date_range</span>
+<span>14 sep - 20 sep, 2025</span>
+</div>
+<div class="bg-surface-container p-1 rounded-full flex items-center self-start sm:self-auto" role="tablist">
+<button class="px-5 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm transition-all focus:outline-none min-h-[44px] flex items-center" id="tab-semana" type="button">
+          Semana
+        </button>
+<button class="px-5 py-2 rounded-full font-label-md text-label-md text-on-surface-variant transition-all hover:text-on-surface focus:outline-none min-h-[44px] flex items-center" id="tab-mes" type="button">
+          Mes
+        </button>
+</div>
+</div>
+</div>
+<!-- Summary Metric Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<!-- Card 1: Minutos -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Minutos</span>
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">timer</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="font-display-lg text-display-lg text-on-surface leading-none">185 <span class="font-label-md text-label-md text-on-surface-variant">min</span></div>
+<div class="inline-flex items-center gap-1 mt-2 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-caption text-caption">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+15% vs sem. pasada</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Sesiones -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Sesiones</span>
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">directions_run</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="font-display-lg text-display-lg text-on-surface leading-none">6</div>
+<div class="flex items-center gap-1.5 mt-2 text-on-surface-variant font-caption text-caption">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Completadas con éxito</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Calorías -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Calorías</span>
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="font-display-lg text-display-lg text-on-surface leading-none">1.420 <span class="font-label-md text-label-md text-on-surface-variant">kcal</span></div>
+<div class="flex items-center gap-1.5 mt-2 text-on-surface-variant font-caption text-caption">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">bolt</span>
+<span>Total quemado</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Daily Minutes Bar Chart Section -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Minutos activos diarios</h2>
+<p class="font-caption text-caption text-on-surface-variant">Consistencia de lunes a domingo</p>
+</div>
+<!-- Legend -->
+<div class="flex items-center gap-4 text-caption font-caption text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span>Minutos</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-0.5 bg-outline border-t border-dashed border-outline"></span>
+<span>Meta: 30 min</span>
+</div>
+</div>
+</div>
+<!-- Interactive Bar Chart Display -->
+<div class="w-full pt-4 pb-2">
+<div class="relative w-full h-48 flex items-end justify-between px-2">
+<!-- Goal 30m Guideline -->
+<div class="absolute left-0 right-0 top-[40%] flex items-center pointer-events-none z-10">
+<div class="w-full border-b border-dashed border-outline/40"></div>
+<span class="shrink-0 ml-1 px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-caption text-[10px] rounded leading-none">Meta 30m</span>
+</div>
+<!-- Lun: 35 min (70% height) -->
+<div class="flex flex-col items-center flex-1 h-full justify-end group cursor-pointer">
+<span class="font-caption text-[11px] font-semibold text-primary mb-1.5 transition-transform group-hover:-translate-y-1">35m</span>
+<div class="w-7 rounded-t-lg bg-primary transition-all duration-300 group-hover:bg-primary-container" style="height: 70%;"></div>
+<div class="mt-2 flex flex-col items-center">
+<span class="font-label-md text-label-md text-on-surface font-semibold">L</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-0.5"></span>
+</div>
+</div>
+<!-- Mar: 45 min (90% height) -->
+<div class="flex flex-col items-center flex-1 h-full justify-end group cursor-pointer">
+<span class="font-caption text-[11px] font-semibold text-primary mb-1.5 transition-transform group-hover:-translate-y-1">45m</span>
+<div class="w-7 rounded-t-lg bg-primary transition-all duration-300 group-hover:bg-primary-container" style="height: 90%;"></div>
+<div class="mt-2 flex flex-col items-center">
+<span class="font-label-md text-label-md text-on-surface font-semibold">M</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-0.5"></span>
+</div>
+</div>
+<!-- Mié: 25 min (50% height) -->
+<div class="flex flex-col items-center flex-1 h-full justify-end group cursor-pointer">
+<span class="font-caption text-[11px] text-on-surface-variant mb-1.5 transition-transform group-hover:-translate-y-1">25m</span>
+<div class="w-7 rounded-t-lg bg-surface-container-highest transition-all duration-300 group-hover:bg-primary/40" style="height: 50%;"></div>
+<div class="mt-2 flex flex-col items-center">
+<span class="font-label-md text-label-md text-on-surface-variant">M</span>
+<span class="w-1.5 h-1.5 rounded-full bg-transparent mt-0.5"></span>
+</div>
+</div>
+<!-- Jue: 40 min (80% height) -->
+<div class="flex flex-col items-center flex-1 h-full justify-end group cursor-pointer">
+<span class="font-caption text-[11px] font-semibold text-primary mb-1.5 transition-transform group-hover:-translate-y-1">40m</span>
+<div class="w-7 rounded-t-lg bg-primary transition-all duration-300 group-hover:bg-primary-container" style="height: 80%;"></div>
+<div class="mt-2 flex flex-col items-center">
+<span class="font-label-md text-label-md text-on-surface font-semibold">J</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-0.5"></span>
+</div>
+</div>
+<!-- Vie: 0 min (Descanso) -->
+<div class="flex flex-col items-center flex-1 h-full justify-end group cursor-pointer">
+<span class="font-caption text-[11px] text-outline mb-1.5">--</span>
+<div class="w-7 h-2 rounded-full bg-surface-container"></div>
+<div class="mt-2 flex flex-col items-center">
+<span class="font-label-md text-label-md text-outline">V</span>
+<span class="w-1.5 h-1.5 rounded-full bg-transparent mt-0.5"></span>
+</div>
+</div>
+<!-- Sáb: 20 min (40% height) -->
+<div class="flex flex-col items-center flex-1 h-full justify-end group cursor-pointer">
+<span class="font-caption text-[11px] text-on-surface-variant mb-1.5 transition-transform group-hover:-translate-y-1">20m</span>
+<div class="w-7 rounded-t-lg bg-surface-container-highest transition-all duration-300 group-hover:bg-primary/40" style="height: 40%;"></div>
+<div class="mt-2 flex flex-col items-center">
+<span class="font-label-md text-label-md text-on-surface-variant">S</span>
+<span class="w-1.5 h-1.5 rounded-full bg-transparent mt-0.5"></span>
+</div>
+</div>
+<!-- Dom: 20 min (40% height) -->
+<div class="flex flex-col items-center flex-1 h-full justify-end group cursor-pointer">
+<span class="font-caption text-[11px] text-on-surface-variant mb-1.5 transition-transform group-hover:-translate-y-1">20m</span>
+<div class="w-7 rounded-t-lg bg-surface-container-highest transition-all duration-300 group-hover:bg-primary/40" style="height: 40%;"></div>
+<div class="mt-2 flex flex-col items-center">
+<span class="font-label-md text-label-md text-on-surface-variant">D</span>
+<span class="w-1.5 h-1.5 rounded-full bg-transparent mt-0.5"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Motivational Callout Banner -->
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low">
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+</div>
+<p class="font-caption text-caption text-on-surface">
+<span class="font-semibold text-primary">¡Excelente ritmo!</span> Superaste la meta diaria en 3 de tus sesiones esta semana.
+      </p>
+</div>
+</div>
+<!-- Monthly Trend Section -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Tendencia del mes</h2>
+<p class="font-caption text-caption text-on-surface-variant">Evolución de minutos completados</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-caption text-caption">Últimas 4 semanas</span>
+</div>
+<!-- Area Chart SVG -->
+<div class="relative w-full h-36">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 320 120">
+<defs>
+<lineargradient id="trendGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#006b2c" stop-opacity="0.28"></stop>
+<stop offset="100%" stop-color="#006b2c" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Horizontal guide grid -->
+<line stroke="#dae2fd" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="320" y1="30" y2="30"></line>
+<line stroke="#dae2fd" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="320" y1="75" y2="75"></line>
+<!-- Shaded Area -->
+<polygon fill="url(#trendGradient)" points="20,85 100,68 180,45 280,25 280,120 20,120"></polygon>
+<!-- Solid Trend Line (Past Weeks) -->
+<path d="M 20 85 L 100 68 L 180 45" fill="none" stroke="#006b2c" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+<!-- Dashed Trend Line (Projection) -->
+<path d="M 180 45 L 280 25" fill="none" stroke="#006b2c" stroke-dasharray="5 5" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Data Nodes -->
+<!-- Sem 1 -->
+<circle cx="20" cy="85" fill="#faf8ff" r="4.5" stroke="#006b2c" stroke-width="3"></circle>
+<!-- Sem 2 -->
+<circle cx="100" cy="68" fill="#faf8ff" r="4.5" stroke="#006b2c" stroke-width="3"></circle>
+<!-- Sem 3 (Current) -->
+<circle cx="180" cy="45" fill="#006b2c" r="6" stroke="#faf8ff" stroke-width="2"></circle>
+<!-- Sem 4 (Projection) -->
+<circle cx="280" cy="25" fill="#faf8ff" r="4.5" stroke="#006b2c" stroke-width="2"></circle>
+</svg>
+</div>
+<!-- Trend X-Axis Labels -->
+<div class="flex items-center justify-between text-on-surface-variant font-caption text-caption px-1">
+<div class="flex flex-col items-center">
+<span>Sem 1</span>
+<span class="font-semibold text-on-surface">130m</span>
+</div>
+<div class="flex flex-col items-center">
+<span>Sem 2</span>
+<span class="font-semibold text-on-surface">155m</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="text-primary font-semibold">Sem 3</span>
+<span class="font-semibold text-primary">185m</span>
+</div>
+<div class="flex flex-col items-center opacity-70">
+<span>Sem 4 (Proj)</span>
+<span class="font-semibold text-on-surface">200m</span>
+</div>
+</div>
+<!-- Trend Footer Stat Note -->
+<div class="pt-2 flex items-center gap-2 text-on-surface-variant font-caption text-caption">
+<span class="material-symbols-outlined text-[18px] text-primary">verified</span>
+<span><strong class="text-on-surface">Promedio: 156 min</strong> • En camino a superar la meta mensual de 600 min.</span>
+</div>
+</div>
+<!-- Achievements / Logros Section -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Logros y medallas</h2>
+<p class="font-caption text-caption text-on-surface-variant">Reconocimientos a tu constancia</p>
+</div>
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-semibold">
+        3 de 8 desbloqueados
+      </span>
+</div>
+<!-- 2x2 Badges Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Badge 1: EARNED -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex items-start gap-3 relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-2xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed shrink-0">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold truncate">Primera actividad</h3>
+<span class="shrink-0 px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-caption text-[11px] font-semibold">Completado</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">Comenzaste tu camino con energía</p>
+<span class="font-caption text-[11px] text-primary font-medium mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">done</span>
+            Desbloqueado 1 sep
+          </span>
+</div>
+</div>
+<!-- Badge 2: EARNED -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex items-start gap-3 relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-2xl bg-secondary-fixed flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold truncate">Racha de 7 días</h3>
+<span class="shrink-0 px-2 py-0.5 rounded-full bg-secondary-container text-on-primary font-caption text-[11px] font-semibold">¡Imparable! 🔥</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">7 días seguidos activos</p>
+<span class="font-caption text-[11px] text-secondary font-medium mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">bolt</span>
+            Racha activa actual
+          </span>
+</div>
+</div>
+<!-- Badge 3: LOCKED -->
+<div class="bg-surface-container-low rounded-2xl p-space-md shadow-sm flex items-start gap-3 relative overflow-hidden opacity-90">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-highest flex items-center justify-center text-outline shrink-0">
+<span class="material-symbols-outlined text-[28px]">lock</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold truncate">100 km acumulados</h3>
+<span class="shrink-0 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-caption text-[11px]">Bloqueado</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">Faltan 38 km para desbloquear</p>
+<!-- Progress bar -->
+<div class="w-full bg-surface-container-highest h-2 rounded-full mt-2 overflow-hidden">
+<div class="bg-outline h-full rounded-full" style="width: 62%;"></div>
+</div>
+<span class="font-caption text-[11px] text-on-surface-variant font-medium mt-1 text-right">62 / 100 km</span>
+</div>
+</div>
+<!-- Badge 4: EARNED -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex items-start gap-3 relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-2xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed-variant shrink-0">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold truncate">Madrugador</h3>
+<span class="shrink-0 px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-caption text-[11px] font-semibold">Desbloqueado</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">Entrenamientos antes de 7 a. m.</p>
+<span class="font-caption text-[11px] text-primary font-medium mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">alarm_on</span>
+            5 sesiones matutinas
+          </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const tabSemana = document.getElementById('tab-semana');
+    const tabMes = document.getElementById('tab-mes');
+
+    if (tabSemana && tabMes) {
+      tabMes.addEventListener('click', function() {
+        tabMes.className = 'px-5 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm transition-all focus:outline-none min-h-[44px] flex items-center';
+        tabSemana.className = 'px-5 py-2 rounded-full font-label-md text-label-md text-on-surface-variant transition-all hover:text-on-surface focus:outline-none min-h-[44px] flex items-center';
+      });
+
+      tabSemana.addEventListener('click', function() {
+        tabSemana.className = 'px-5 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm transition-all focus:outline-none min-h-[44px] flex items-center';
+        tabMes.className = 'px-5 py-2 rounded-full font-label-md text-label-md text-on-surface-variant transition-all hover:text-on-surface focus:outline-none min-h-[44px] flex items-center';
+      });
+    }
+  })();
+</script></main><aside class="fixed right-space-md z-40 bottom-fab"><a class="flex items-center gap-space-xs h-12 px-space-lg rounded-full bg-primary text-on-primary shadow-[0_8px_20px_rgba(22,163,74,0.35)] hover:bg-primary-container active:scale-95 transition-all duration-150" data-path="registrar-actividad" href="#"><span class="material-symbols-outlined text-[24px]">add</span><span class="font-label-md text-label-md">Registrar</span></a></aside><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_16px_rgba(15,23,42,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-colors" data-path="inicio" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-caption text-caption mt-0.5">Inicio</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-colors" data-path="historial" href="#"><span class="material-symbols-outlined text-[24px]">calendar_today</span><span class="font-caption text-caption mt-0.5">Historial</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-colors" data-path="metas" href="#"><span class="material-symbols-outlined text-[24px]">track_changes</span><span class="font-caption text-caption mt-0.5">Metas</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-colors" data-path="estadisticas" href="#"><span class="material-symbols-outlined text-[24px]">bar_chart</span><span class="font-caption text-caption mt-0.5">Estadísticas</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-colors" data-path="perfil" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-caption text-caption mt-0.5">Perfil</span></a></div></nav></body></html>

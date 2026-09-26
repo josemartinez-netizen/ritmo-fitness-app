@@ -1,0 +1,151 @@
+[
+  {
+    "id": "5ccc7d8b6e86466b97b263caeb2854fe",
+    "title": "Ritmo - Onboarding (1 de 3)",
+    "width": "780",
+    "height": "1934",
+    "has_html": true,
+    "has_screenshot": true,
+    "html_chars": 16871,
+    "screenshot_bytes": 48817
+  },
+  {
+    "id": "0e43c81ce8f341328caefbbc9151a316",
+    "title": "Ritmo - Historial",
+    "width": "780",
+    "height": "2340",
+    "has_html": true,
+    "has_screenshot": true,
+    "html_chars": 22368,
+    "screenshot_bytes": 41590
+  },
+  {
+    "id": "7aafa6c5839045dcb94024a90d437270",
+    "title": "Portrait photo of a friendly young Hispanic Colombian woman with a warm athletic smile, natural lighting, outdoors workout setting, neutral blurred background, high quality avatar headshot.",
+    "width": "1024",
+    "height": "1024",
+    "has_html": false,
+    "has_screenshot": true,
+    "screenshot_bytes": 61116
+  },
+  {
+    "id": "2b3abeabe9d8472d848ea8ec559e113b",
+    "title": "Ritmo - Actividad guardada",
+    "width": "780",
+    "height": "1768",
+    "has_html": true,
+    "has_screenshot": true,
+    "html_chars": 17483,
+    "screenshot_bytes": 46443
+  },
+  {
+    "id": "ae74d1d2c2e9429d8e47ed18a4b3ada9",
+    "title": "Ritmo - Registrar actividad (Vacío)",
+    "width": "780",
+    "height": "1768",
+    "has_html": true,
+    "has_screenshot": true,
+    "html_chars": 18281,
+    "screenshot_bytes": 36691
+  },
+  {
+    "id": "99725c7e2620402592eb2232b9d65659",
+    "title": "Ritmo Logo",
+    "width": "100",
+    "height": "100",
+    "has_html": true,
+    "has_screenshot": true,
+    "html_chars": 302,
+    "screenshot_bytes": 6715
+  },
+  {
+    "id": "594c7d822f6945cbb6cc86ba7293ad72",
+    "title": "Ritmo - Historial (Vacío)",
+    "width": "780",
+    "height": "1892",
+    "has_html": true,
+    "has_screenshot": true,
+    "html_chars": 17879,
+    "screenshot_bytes": 42599
+  },
+  {
+    "id": "2344d5b113554c54a9aabfaf96d044a8",
+    "title": "Ritmo - Registrar actividad",
+    "width": "780",
+    "height": "1768",
+    "has_html": true,
+    "has_screenshot": true,
+    "html_chars": 22075,
+    "screenshot_bytes": 39009
+  },
+  {
+    "id": "c8b07ec9302c4f82aff5b4f3e88a9613",
+    "title": "Ritmo - Onboarding (2 de 3)",
+    "width": "780",
+    "height": "2094",
+    "has_html": true,
+    "has_screenshot": true,
+    "html_chars": 16932,
+    "screenshot_bytes": 42698
+  },
+  {
+    "id": "7c6ee910873c42c39a4c7b9358fa869e",
+    "title": "Ritmo - Bienvenida",
+    "width": "780",
+    "height": "1806",
+    "has_html": true,
+    "has_screenshot": true,
+    "html_chars": 9691,
+    "screenshot_bytes": 78857
+  },
+  {
+    "id": "23168ad11d4247acb8d263afce104e89",
+    "title": "Ritmo - Onboarding (3 de 3)",
+    "width": "780",
+    "height": "2050",
+    "has_html": true,
+    "has_screenshot": true,
+    "html_chars": 17485,
+    "screenshot_bytes": 45733
+  },
+  {
+    "id": "49108ab4b6e64d0d91b593606d424c36",
+    "title": "Ritmo - Inicio",
+    "width": "780",
+    "height": "2884",
+    "has_html": true,
+    "has_screenshot": true,
+    "html_chars": 22858,
+    "screenshot_bytes": 41563
+  },
+  {
+    "id": "a66d031400ad4fb9ac52774819c5b9f6",
+    "title": "Ritmo - Estadísticas",
+    "width": "780",
+    "height": "4390",
+    "has_html": true,
+    "has_screenshot": true,
+    "html_chars": 28579,
+    "screenshot_bytes": 25296
+  },
+  {
+    "id": "00f50381806f4723b9e1db1268110ed3",
+    "title": "Ritmo - Registrar actividad (Error)",
+    "width": "780",
+    "height": "1768",
+    "has_html": true,
+    "has_screenshot": true,
+    "html_chars": 14164,
+    "screenshot_bytes": 36081
+  },
+  {
+    "id": "b897d19e14064d3e91d85f0fadaa6269",
+    "title": "Ritmo - Crear cuenta",
+    "width": "780",
+    "height": "1988",
+    "has_html": true,
+    "has_screenshot": true,
+    "html_chars": 13024,
+    "screenshot_bytes": 43573
+  }
+]

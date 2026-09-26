@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;font-family:'Inter',sans-serif;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-tint":"#006e2d","on-tertiary-fixed":"#0d1c2e","primary-container":"#00873a","secondary":"#9d4300","error":"#ba1a1a","on-surface-variant":"#3e4a3d","inverse-on-surface":"#eef0ff","on-error":"#ffffff","surface-container-lowest":"#ffffff","surface-bright":"#faf8ff","surface-variant":"#dae2fd","primary-fixed":"#7ffc97","on-background":"#131b2e","secondary-fixed-dim":"#ffb690","tertiary":"#4f5d71","background":"#faf8ff","tertiary-fixed-dim":"#b9c7df","on-secondary-fixed":"#341100","on-primary-fixed":"#002109","inverse-surface":"#283044","on-tertiary-fixed-variant":"#3a485b","surface-container-high":"#e2e7ff","on-surface":"#131b2e","on-secondary":"#ffffff","surface":"#faf8ff","surface-container":"#eaedff","error-container":"#ffdad6","surface-container-low":"#f2f3ff","secondary-container":"#fd761a","secondary-fixed":"#ffdbca","outline-variant":"#bdcaba","on-primary":"#ffffff","outline":"#6e7b6c","on-tertiary":"#ffffff","surface-dim":"#d2d9f4","on-secondary-container":"#5c2400","tertiary-container":"#67758b","on-primary-container":"#f7fff2","surface-container-highest":"#dae2fd","inverse-primary":"#62df7d","primary":"#006b2c","tertiary-fixed":"#d5e3fc","on-primary-fixed-variant":"#005320","on-error-container":"#93000a","on-tertiary-container":"#fdfcff","on-secondary-fixed-variant":"#783200","primary-fixed-dim":"#62df7d"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"1rem","space-md":"1rem","space-sm":"0.5rem","space-xs":"0.25rem","space-lg":"1.5rem","space-xl":"2rem","gutter":"1rem"},"fontFamily":{"label-sm":["Inter"],"headline-md":["Inter"],"label-md":["Inter"],"caption":["Inter"],"body-lg":["Inter"],"title-md":["Inter"],"display-lg":["Inter"],"body-md":["Inter"],"headline-lg":["Inter"]},"fontSize":{"label-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"caption":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"500"}],"title-md":["18px",{"lineHeight":"24px","fontWeight":"600"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}}</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-on-background/40 backdrop-blur-sm min-h-screen flex flex-col justify-end"><div aria-label="Cerrar modal" class="fixed inset-0 z-0" onclick="history.back()"></div><div class="relative z-10 w-full bg-surface-container-lowest rounded-t-[24px] shadow-[0_-8px_32px_rgba(15,23,42,0.12)] flex flex-col max-h-[813px] pb-safe"><div class="w-full flex justify-center pt-3 pb-1"><div class="w-10 h-1 bg-outline-variant/60 rounded-full"></div></div><div class="h-14 px-gutter flex items-center justify-between"><h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Registrar actividad</h2><button aria-label="Cerrar" class="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" onclick="history.back()" type="button"><span class="material-symbols-rounded text-2xl">close</span></button></div><main class="flex-1 flex flex-col relative w-full overflow-y-auto px-gutter py-space-sm bg-surface-container-lowest"><div class="flex flex-col w-full pb-6 space-y-5">
+<!-- Interactive Selector Logic Script -->
+<script>
+    function selectActivity(btn, type, needsDistance) {
+      document.querySelectorAll('.activity-chip').forEach(el => {
+        el.classList.remove('bg-primary', 'text-on-primary', 'shadow-md');
+        el.classList.add('bg-surface-container-low', 'text-on-surface');
+      });
+      btn.classList.remove('bg-surface-container-low', 'text-on-surface');
+      btn.classList.add('bg-primary', 'text-on-primary', 'shadow-md');
+
+      const distanceSection = document.getElementById('distance-section');
+      const distancePlaceholder = document.getElementById('distance-placeholder');
+      const distanceInput = document.getElementById('distance-input');
+
+      if (needsDistance) {
+        distancePlaceholder.classList.add('hidden');
+        distanceInput.classList.remove('hidden');
+      } else {
+        distancePlaceholder.classList.remove('hidden');
+        distanceInput.classList.add('hidden');
+      }
+      checkFormCompletion();
+    }
+
+    let durationValue = 0;
+    function updateDuration(delta) {
+      durationValue = Math.max(0, durationValue + delta);
+      const display = document.getElementById('duration-val');
+      const minusBtn = document.getElementById('btn-minus-5');
+      
+      if (durationValue === 0) {
+        display.innerHTML = '<span class="text-on-surface-variant/40">--</span> <span class="text-label-md font-medium text-on-surface-variant/50">min</span>';
+        minusBtn.disabled = true;
+        minusBtn.classList.add('opacity-40', 'cursor-not-allowed');
+      } else {
+        display.innerHTML = `${durationValue} <span class="text-headline-md font-medium text-on-surface-variant">min</span>`;
+        minusBtn.disabled = false;
+        minusBtn.classList.remove('opacity-40', 'cursor-not-allowed');
+      }
+      checkFormCompletion();
+    }
+
+    function selectIntensity(btn) {
+      document.querySelectorAll('.intensity-btn').forEach(el => {
+        el.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-semibold');
+        el.classList.add('text-on-surface-variant');
+      });
+      btn.classList.remove('text-on-surface-variant');
+      btn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-semibold');
+    }
+
+    function toggleNotes() {
+      const notesBody = document.getElementById('notes-content');
+      const notesIcon = document.getElementById('notes-chevron');
+      const isHidden = notesBody.classList.contains('hidden');
+      if (isHidden) {
+        notesBody.classList.remove('hidden');
+        notesIcon.textContent = 'expand_less';
+      } else {
+        notesBody.classList.add('hidden');
+        notesIcon.textContent = 'expand_more';
+      }
+    }
+
+    function checkFormCompletion() {
+      const hasActivity = document.querySelector('.activity-chip.bg-primary') !== null;
+      const saveBtn = document.getElementById('save-action-btn');
+      const saveHint = document.getElementById('save-action-hint');
+      
+      if (hasActivity && durationValue > 0) {
+        saveBtn.disabled = false;
+        saveBtn.classList.remove('bg-surface-container-highest', 'text-on-surface-variant/40', 'cursor-not-allowed');
+        saveBtn.classList.add('bg-primary', 'text-on-primary', 'shadow-lg', 'shadow-primary/20', 'hover:bg-primary-container');
+        saveHint.textContent = '¡Listo para guardar tu sesión!';
+        saveHint.classList.remove('text-on-surface-variant/60');
+        saveHint.classList.add('text-primary', 'font-medium');
+      } else {
+        saveBtn.disabled = true;
+        saveBtn.classList.add('bg-surface-container-highest', 'text-on-surface-variant/40', 'cursor-not-allowed');
+        saveBtn.classList.remove('bg-primary', 'text-on-primary', 'shadow-lg', 'shadow-primary/20', 'hover:bg-primary-container');
+        saveHint.textContent = 'Elige una actividad y duración para guardar';
+        saveHint.classList.add('text-on-surface-variant/60');
+        saveHint.classList.remove('text-primary', 'font-medium');
+      }
+    }
+  </script>
+<!-- Friendly Guidance Banner -->
+<div class="flex items-center gap-3 p-3.5 bg-surface-container-low rounded-xl">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed shrink-0">
+<span class="material-symbols-rounded text-xl">vital_signs</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="text-body-md font-semibold text-on-surface leading-tight">Nueva sesión en Ritmo</p>
+<p class="text-caption text-on-surface-variant leading-snug">Selecciona una actividad para comenzar el registro</p>
+</div>
+</div>
+<!-- 1. Exercise Type Horizontal Scrolling -->
+<div class="flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-label-md font-semibold text-on-surface">Tipo de actividad</span>
+<span class="text-caption text-on-surface-variant/70">Requerido</span>
+</div>
+<div class="flex gap-2.5 overflow-x-auto pb-1 -mx-margin px-margin no-scrollbar">
+<!-- Caminar -->
+<button class="activity-chip flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container-low text-on-surface font-medium text-label-md transition-all active:scale-95 shrink-0" onclick="selectActivity(this, 'caminar', false)" type="button">
+<span class="material-symbols-rounded text-xl">directions_walk</span>
+<span>Caminar</span>
+</button>
+<!-- Correr -->
+<button class="activity-chip flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container-low text-on-surface font-medium text-label-md transition-all active:scale-95 shrink-0" onclick="selectActivity(this, 'correr', true)" type="button">
+<span class="material-symbols-rounded text-xl">directions_run</span>
+<span>Correr</span>
+</button>
+<!-- Bicicleta -->
+<button class="activity-chip flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container-low text-on-surface font-medium text-label-md transition-all active:scale-95 shrink-0" onclick="selectActivity(this, 'bici', true)" type="button">
+<span class="material-symbols-rounded text-xl">directions_bike</span>
+<span>Bicicleta</span>
+</button>
+<!-- Gimnasio -->
+<button class="activity-chip flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container-low text-on-surface font-medium text-label-md transition-all active:scale-95 shrink-0" onclick="selectActivity(this, 'gym', false)" type="button">
+<span class="material-symbols-rounded text-xl">fitness_center</span>
+<span>Gimnasio</span>
+</button>
+<!-- Natación -->
+<button class="activity-chip flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container-low text-on-surface font-medium text-label-md transition-all active:scale-95 shrink-0" onclick="selectActivity(this, 'natacion', false)" type="button">
+<span class="material-symbols-rounded text-xl">pool</span>
+<span>Natación</span>
+</button>
+<!-- Yoga -->
+<button class="activity-chip flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container-low text-on-surface font-medium text-label-md transition-all active:scale-95 shrink-0" onclick="selectActivity(this, 'yoga', false)" type="button">
+<span class="material-symbols-rounded text-xl">self_improvement</span>
+<span>Yoga</span>
+</button>
+</div>
+</div>
+<!-- 2. Duración Section -->
+<div class="bg-surface-container-low rounded-xl p-4 flex flex-col items-center justify-center space-y-3">
+<div class="flex items-center justify-between w-full">
+<span class="text-label-md font-semibold text-on-surface">Duración</span>
+<span class="text-caption text-on-surface-variant">Minutos activos</span>
+</div>
+<!-- Stepper display -->
+<div class="flex items-center justify-center gap-6 w-full py-1">
+<button class="w-12 h-12 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold text-label-md opacity-40 cursor-not-allowed transition-all active:scale-90 shadow-sm" disabled="" id="btn-minus-5" onclick="updateDuration(-5)" type="button">
+        -5
+      </button>
+<div class="font-display-lg text-display-lg text-on-surface font-bold tracking-tight min-w-[120px] text-center" id="duration-val">
+<span class="text-on-surface-variant/40">--</span> <span class="text-label-md font-medium text-on-surface-variant/50">min</span>
+</div>
+<button class="w-12 h-12 rounded-full bg-surface-container-highest hover:bg-surface-container text-on-surface flex items-center justify-center font-bold text-label-md transition-all active:scale-90 shadow-sm" id="btn-plus-5" onclick="updateDuration(5)" type="button">
+        +5
+      </button>
+</div>
+</div>
+<!-- 3. Distancia (km) section with dashed placeholder -->
+<div class="flex flex-col space-y-1.5" id="distance-section">
+<span class="text-label-md font-semibold text-on-surface">Distancia estimada</span>
+<!-- Empty placeholder state -->
+<div class="w-full p-4 rounded-xl bg-surface-container-low/60 flex items-center gap-3" id="distance-placeholder">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface-variant/60">
+<span class="material-symbols-rounded text-xl">route</span>
+</div>
+<p class="text-caption text-on-surface-variant/70 leading-normal">
+        Selecciona <span class="font-semibold text-on-surface">Correr</span> o <span class="font-semibold text-on-surface">Bicicleta</span> para ingresar distancia
+      </p>
+</div>
+<!-- Revealed when needed -->
+<div class="hidden w-full p-3.5 rounded-xl bg-surface-container-low flex items-center justify-between" id="distance-input">
+<div class="flex items-center gap-2">
+<span class="material-symbols-rounded text-primary text-xl">straighten</span>
+<span class="text-label-md text-on-surface font-medium">Distancia</span>
+</div>
+<div class="flex items-center gap-1.5">
+<input class="w-20 text-right bg-surface-container-lowest px-2.5 py-1 rounded-lg text-body-md font-semibold text-on-surface focus:outline-none focus:ring-1 focus:ring-primary" placeholder="0.0" step="0.1" type="number"/>
+<span class="text-label-md text-on-surface-variant font-medium">km</span>
+</div>
+</div>
+</div>
+<!-- 4. Intensidad Segmented Control -->
+<div class="flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-label-md font-semibold text-on-surface">Nivel de esfuerzo</span>
+<span class="text-caption text-on-surface-variant/70">Percepción RPE</span>
+</div>
+<div class="w-full bg-surface-container-low p-1 rounded-xl flex items-center justify-between">
+<button class="intensity-btn flex-1 py-2 text-center text-label-md text-on-surface-variant rounded-lg transition-all" onclick="selectIntensity(this)" type="button">
+        Baja
+      </button>
+<button class="intensity-btn flex-1 py-2 text-center text-label-md text-on-surface-variant rounded-lg transition-all" onclick="selectIntensity(this)" type="button">
+        Media
+      </button>
+<button class="intensity-btn flex-1 py-2 text-center text-label-md text-on-surface-variant rounded-lg transition-all" onclick="selectIntensity(this)" type="button">
+        Alta
+      </button>
+</div>
+</div>
+<!-- 5. Fecha y hora Row -->
+<div class="flex items-center justify-between p-3.5 bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-rounded text-xl">calendar_today</span>
+</div>
+<div class="flex flex-col">
+<span class="text-label-md font-semibold text-on-surface">Fecha y hora</span>
+<span class="text-caption text-on-surface-variant">Hoy, hace unos instantes</span>
+</div>
+</div>
+<button class="w-9 h-9 flex items-center justify-center rounded-full text-primary hover:bg-surface-container-high transition-colors active:scale-95" type="button">
+<span class="material-symbols-rounded text-xl">edit</span>
+</button>
+</div>
+<!-- 6. Collapsed Section: Más detalles -->
+<div class="flex flex-col bg-surface-container-low rounded-xl overflow-hidden">
+<button class="w-full p-3.5 flex items-center justify-between text-left transition-colors hover:bg-surface-container" onclick="toggleNotes()" type="button">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-rounded text-lg">note_add</span>
+<span class="text-label-md font-medium text-on-surface">+ Añadir notas (opcional)</span>
+</div>
+<span class="material-symbols-rounded text-on-surface-variant transition-transform" id="notes-chevron">expand_more</span>
+</button>
+<div class="hidden px-3.5 pb-3.5 pt-1" id="notes-content">
+<textarea class="w-full bg-surface-container-lowest text-on-surface text-body-md rounded-lg p-2.5 placeholder:text-on-surface-variant/40 focus:outline-none" placeholder="¿Cómo te sentiste? Ej. Buen clima en el parque Simón Bolívar..." rows="2"></textarea>
+</div>
+</div>
+<!-- 7. Sticky Bottom Action Bar -->
+<div class="sticky bottom-0 pt-3 bg-surface-container-lowest flex flex-col items-center space-y-2">
+<button class="w-full py-3.5 px-6 rounded-full bg-surface-container-highest text-on-surface-variant/40 font-semibold text-body-lg flex items-center justify-center gap-2 cursor-not-allowed transition-all" disabled="" id="save-action-btn" type="button">
+<span class="material-symbols-rounded text-xl">check_circle</span>
+<span>Guardar actividad</span>
+</button>
+<p class="text-caption text-on-surface-variant/60 text-center pb-1" id="save-action-hint">
+      Elige una actividad y duración para guardar
+    </p>
+</div>
+</div></main></div></body></html>

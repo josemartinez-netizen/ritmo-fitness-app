@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-surface-variant": "#3e4a3d",
+          "on-primary-container": "#f7fff2",
+          "surface-tint": "#006e2d",
+          "on-secondary-fixed": "#341100",
+          "inverse-on-surface": "#eef0ff",
+          "surface-variant": "#dae2fd",
+          "secondary-container": "#fd761a",
+          "background": "#faf8ff",
+          "secondary": "#9d4300",
+          "outline": "#6e7b6c",
+          "on-secondary-fixed-variant": "#783200",
+          "on-tertiary-fixed": "#0d1c2e",
+          "surface-bright": "#faf8ff",
+          "tertiary-container": "#67758b",
+          "inverse-primary": "#62df7d",
+          "on-primary": "#ffffff",
+          "on-tertiary": "#ffffff",
+          "surface-container-low": "#f2f3ff",
+          "on-primary-fixed-variant": "#005320",
+          "surface-container-lowest": "#ffffff",
+          "on-surface": "#131b2e",
+          "on-secondary-container": "#5c2400",
+          "primary-fixed-dim": "#62df7d",
+          "primary-container": "#00873a",
+          "outline-variant": "#bdcaba",
+          "error": "#ba1a1a",
+          "tertiary": "#4f5d71",
+          "tertiary-fixed-dim": "#b9c7df",
+          "on-primary-fixed": "#002109",
+          "surface-container": "#eaedff",
+          "inverse-surface": "#283044",
+          "on-error-container": "#93000a",
+          "surface-container-highest": "#dae2fd",
+          "secondary-fixed-dim": "#ffb690",
+          "secondary-fixed": "#ffdbca",
+          "primary-fixed": "#7ffc97",
+          "surface-dim": "#d2d9f4",
+          "tertiary-fixed": "#d5e3fc",
+          "error-container": "#ffdad6",
+          "primary": "#006b2c",
+          "on-secondary": "#ffffff",
+          "on-background": "#131b2e",
+          "on-tertiary-fixed-variant": "#3a485b",
+          "surface": "#faf8ff",
+          "surface-container-high": "#e2e7ff",
+          "on-error": "#ffffff",
+          "on-tertiary-container": "#fdfcff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-md": "1rem",
+          "space-sm": "0.5rem",
+          "space-lg": "1.5rem",
+          "margin": "1rem",
+          "gutter": "1rem",
+          "space-xs": "0.25rem",
+          "space-xl": "2rem"
+        },
+        "fontFamily": {
+          "headline-lg": ["Inter"],
+          "title-md": ["Inter"],
+          "label-md": ["Inter"],
+          "label-sm": ["Inter"],
+          "headline-md": ["Inter"],
+          "display-lg": ["Inter"],
+          "body-md": ["Inter"],
+          "caption": ["Inter"],
+          "body-lg": ["Inter"]
+        },
+        "fontSize": {
+          "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+          "title-md": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+          "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+          "label-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "headline-md": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "display-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "caption": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+          "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "500"}]
+        }
+      }
+    }
+  }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}.bottom-fab{bottom:calc(5rem + env(safe-area-inset-bottom,0px));}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen antialiased"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Ritmo Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WHRb4d7pdWmnXRpgGMj-zYI_V6iiWDV18B21bqRYAuvd5VRhtY0BDVG_roWpi72789IZQIiv8O3nkTkbGyQP8kesEa4-wLSvcMH8hmyEYjTuJ2RruplcdXZtDCKUMIWfAO13OE6ZqxfqvesYg0-JmwZS3n8Jj1mCI8WntIUGa3nLmLS9YcuxfQNctcbGTFkpURUXx4oUocYJV8JaVl0YU0OxEixI4P1ZXxQp04ZFq6JKAmae-qW1pUvQ"/><span class="font-title-md text-title-md text-on-surface tracking-tight">Ritmo</span></div><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md text-on-surface-variant hidden sm:inline">Inicio</span><button class="w-11 h-11 rounded-full flex items-center justify-center p-0.5 focus:outline-none focus:ring-2 focus:ring-primary" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDweCFkfciscuocRq2s-ve5B91hY2hW18Si9GkGaEvU2Mzj3-Pdn87zQ4wtJdVAxu9V9zMaZUkZ4BGk1oMvm0RZk9PtDCfY-bSCA-o99_I9t-hJRqhruAMQs6iR4hFwRRy8RWF8o7WNW1bHyteBecyO62dtyNL_vY1SCwwoHeIXnGEk4JqeecTH9I3zIbvXtS3VR5xua2MmifGd5CB8FB-YDOQ6D0b9Vm6SW-k_XJskZkj9U62uNOD8"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-36 bg-surface min-h-screen px-space-md"><div class="flex flex-col w-full relative">
+<!-- Cabecera de Sección -->
+<div class="flex flex-col pt-space-sm pb-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Historial</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">Tus entrenamientos registrados</p>
+</div>
+<button aria-label="Calendario de actividades" class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-container hover:bg-surface-container-high transition-colors active:scale-95 text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[22px]">calendar_month</span>
+</button>
+</div>
+</div>
+<!-- Filtros Horizontales Scrolleables -->
+<div class="w-full overflow-x-auto no-scrollbar -mx-space-md px-space-md pb-space-sm">
+<div aria-label="Filtros por tipo de actividad" class="flex items-center gap-2 min-w-max" id="filter-chips" role="tablist">
+<button aria-selected="true" class="filter-chip h-9 px-4 rounded-full font-label-md text-label-md flex items-center justify-center bg-primary text-on-primary shadow-sm transition-all duration-200 active:scale-95" role="tab">
+        Todas
+      </button>
+<button aria-selected="false" class="filter-chip h-9 px-4 rounded-full font-label-md text-label-md flex items-center justify-center bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all duration-200 active:scale-95" role="tab">
+        Correr
+      </button>
+<button aria-selected="false" class="filter-chip h-9 px-4 rounded-full font-label-md text-label-md flex items-center justify-center bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all duration-200 active:scale-95" role="tab">
+        Caminar
+      </button>
+<button aria-selected="false" class="filter-chip h-9 px-4 rounded-full font-label-md text-label-md flex items-center justify-center bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all duration-200 active:scale-95" role="tab">
+        Gimnasio
+      </button>
+<button aria-selected="false" class="filter-chip h-9 px-4 rounded-full font-label-md text-label-md flex items-center justify-center bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all duration-200 active:scale-95" role="tab">
+        Yoga
+      </button>
+</div>
+</div>
+<!-- Contenido Central: Estado Vacío Amigable y Lleno de Vida -->
+<div class="flex flex-col items-center justify-center text-center mt-6 px-space-sm pb-10">
+<!-- Ilustración Vectorial Deportiva Estilizada -->
+<div class="relative w-64 h-56 flex items-center justify-center mb-4">
+<!-- Pulso de Fondo / Ondas de Ritmo -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="w-48 h-48 rounded-full bg-primary-fixed/20 animate-ping opacity-30" style="animation-duration: 3.5s;"></div>
+<div class="w-56 h-56 rounded-full bg-surface-container-high/60 absolute"></div>
+</div>
+<!-- Canvas SVG Ilustrado -->
+<svg class="w-56 h-56 relative z-10 drop-shadow-sm" fill="none" viewbox="0 0 240 220" xmlns="http://www.w3.org/2000/svg">
+<!-- Ondas de Ritmo Cardíaco / Momentum -->
+<path d="M20 168C48 168 54 152 70 152C86 152 92 188 108 188C124 188 132 120 144 120C156 120 164 168 182 168C200 168 206 156 224 156" opacity="0.45" stroke="#00873a" stroke-dasharray="4 4" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+<path d="M40 168C60 168 76 138 92 138C108 138 116 172 130 172C144 172 152 146 166 146C180 146 195 168 210 168" opacity="0.85" stroke="#006b2c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<!-- Cronómetro de Entrenamiento Moderno -->
+<g transform="translate(132, 28)">
+<!-- Botón superior -->
+<rect fill="#67758b" height="7" rx="3" width="12" x="26" y="2"></rect>
+<rect fill="#4f5d71" height="5" width="6" x="29" y="8"></rect>
+<!-- Pulsador diagonal -->
+<rect fill="#fd761a" height="5" rx="2" transform="rotate(45 48 10)" width="8" x="48" y="10"></rect>
+<!-- Cuerpo del cronómetro -->
+<circle cx="32" cy="42" fill="#ffffff" filter="drop-shadow(0px 4px 8px rgba(19, 27, 46, 0.08))" r="30"></circle>
+<circle cx="32" cy="42" r="26" stroke="#eaedff" stroke-width="3"></circle>
+<circle cx="32" cy="42" r="26" stroke="#006b2c" stroke-dasharray="163" stroke-dashoffset="65" stroke-linecap="round" stroke-width="3"></circle>
+<!-- Manecilla y detalles -->
+<circle cx="32" cy="42" fill="#131b2e" r="3"></circle>
+<path d="M32 42L42 30" stroke="#fd761a" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="32" cy="21" fill="#67758b" r="1.5"></circle>
+<circle cx="53" cy="42" fill="#67758b" r="1.5"></circle>
+</g>
+<!-- Silueta / Ilustración Zapatilla Running Vanguardista -->
+<g id="shoe" transform="translate(18, 52)">
+<!-- Sombra suave del zapato -->
+<ellipse cx="92" cy="118" fill="#eaedff" rx="80" ry="10"></ellipse>
+<!-- Suela tecnológica con ranuras de flexión -->
+<path d="M12 110C24 113 46 114 74 114C118 114 148 108 170 98C174 96 177 98 174 102C167 111 138 120 86 120C40 120 10 114 8 112C6 110 8 109 12 110Z" fill="#006b2c"></path>
+<!-- Entresuela ergonómica (espuma blanca) -->
+<path d="M10 106C22 108 52 110 82 110C124 110 156 102 176 90C177 89 179 92 177 94C168 104 136 112 86 114C44 114 14 109 9 107C7 106 8 105 10 106Z" fill="#7ffc97"></path>
+<!-- Capellada / Upper del tenis -->
+<path d="M16 104C14 96 20 84 38 78C56 72 70 76 86 64C98 55 106 42 120 42C126 42 130 46 126 56C122 66 128 72 144 76C162 80 174 86 176 90C158 100 126 107 82 107C48 107 20 105 16 104Z" fill="#ffffff" filter="drop-shadow(0 2px 6px rgba(0,0,0,0.06))"></path>
+<!-- Franjas dinámicas de velocidad en verde de marca -->
+<path d="M78 84C88 74 112 60 134 62C128 72 108 86 86 94L78 84Z" fill="#00873a" opacity="0.9"></path>
+<path d="M96 88C108 78 128 68 146 70C140 78 122 90 104 96L96 88Z" fill="#fd761a"></path>
+<!-- Cordones y lengüeta -->
+<path d="M104 56L116 62M98 63L110 69M92 70L104 76" stroke="#4f5d71" stroke-linecap="round" stroke-width="2"></path>
+<circle cx="120" cy="44" fill="#fd761a" r="3"></circle>
+</g>
+<!-- Destellos chispeantes de motivación -->
+<path d="M44 38L47 46L55 49L47 52L44 60L41 52L33 49L41 46L44 38Z" fill="#fd761a" opacity="0.85"></path>
+<circle cx="198" cy="120" fill="#00873a" r="3.5"></circle>
+<circle cx="28" cy="128" fill="#fd761a" r="2.5"></circle>
+</svg>
+</div>
+<!-- Textos de Empatía y Ritmo -->
+<div class="max-w-[290px] mx-auto flex flex-col items-center">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight mb-1.5">
+        Aún no tienes actividades
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+        Cada gran racha comienza con un primer paso. Toca <strong class="text-primary font-title-md">+</strong> para registrar la primera.
+      </p>
+<!-- Botón de Acción Principal Directo -->
+<a class="w-full flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-[0_4px_12px_rgba(0,107,44,0.25)] hover:bg-primary-container active:scale-[0.98] transition-all duration-200" data-path="registrar-actividad" href="#">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>Registrar mi primer entrenamiento</span>
+</a>
+</div>
+<!-- Indicador Guiado Lúdico hacia el Botón Flotante (+ Registrar) -->
+<div class="mt-8 flex flex-col items-end self-end pr-2 text-right relative pointer-events-none select-none max-w-[210px]">
+<div class="flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-medium animate-bounce" style="animation-duration: 2.2s;">
+<span>O pulsa aquí en cualquier momento</span>
+<span class="material-symbols-outlined text-[18px]">touch_app</span>
+</div>
+<!-- Flecha curvada indicadora hacia el FAB inferior derecho -->
+<svg class="w-14 h-12 text-secondary-container mt-1 mr-4 overflow-visible" fill="none" viewbox="0 0 56 48">
+<path d="M8 4C24 6 44 14 44 36" stroke="currentColor" stroke-dasharray="3 3" stroke-linecap="round" stroke-width="2"></path>
+<path d="M38 32L44 38L49 31" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- Micro-interacción: Cambio de Chips -->
+<script>
+    document.querySelectorAll('#filter-chips .filter-chip').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('#filter-chips .filter-chip').forEach(btn => {
+          btn.setAttribute('aria-selected', 'false');
+          btn.className = 'filter-chip h-9 px-4 rounded-full font-label-md text-label-md flex items-center justify-center bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all duration-200 active:scale-95';
+        });
+        button.setAttribute('aria-selected', 'true');
+        button.className = 'filter-chip h-9 px-4 rounded-full font-label-md text-label-md flex items-center justify-center bg-primary text-on-primary shadow-sm transition-all duration-200 active:scale-95';
+      });
+    });
+  </script>
+</div></main><aside class="fixed right-space-md z-40 bottom-fab"><a class="flex items-center gap-space-xs h-12 px-space-lg rounded-full bg-primary text-on-primary shadow-[0_8px_20px_rgba(22,163,74,0.35)] hover:bg-primary-container active:scale-95 transition-all duration-150" data-path="registrar-actividad" href="#"><span class="material-symbols-outlined text-[24px]">add</span><span class="font-label-md text-label-md">Registrar</span></a></aside><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_16px_rgba(15,23,42,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-colors" data-path="inicio" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-caption text-caption mt-0.5">Inicio</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-colors" data-path="historial" href="#"><span class="material-symbols-outlined text-[24px]">calendar_today</span><span class="font-caption text-caption mt-0.5">Historial</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-colors" data-path="metas" href="#"><span class="material-symbols-outlined text-[24px]">track_changes</span><span class="font-caption text-caption mt-0.5">Metas</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-colors" data-path="estadisticas" href="#"><span class="material-symbols-outlined text-[24px]">bar_chart</span><span class="font-caption text-caption mt-0.5">Estadísticas</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-colors" data-path="perfil" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-caption text-caption mt-0.5">Perfil</span></a></div></nav></body></html>

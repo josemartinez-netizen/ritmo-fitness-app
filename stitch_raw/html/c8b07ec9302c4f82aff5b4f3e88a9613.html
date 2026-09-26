@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary": "#ffffff", "surface-container-highest": "#dae2fd", "tertiary-fixed-dim": "#b9c7df", "on-tertiary-fixed": "#0d1c2e", "primary-fixed-dim": "#62df7d", "secondary": "#9d4300", "on-secondary-container": "#5c2400", "error": "#ba1a1a", "inverse-primary": "#62df7d", "tertiary-container": "#67758b", "surface-container-lowest": "#ffffff", "tertiary-fixed": "#d5e3fc", "surface-container": "#eaedff", "background": "#faf8ff", "on-secondary-fixed-variant": "#783200", "primary-container": "#00873a", "outline-variant": "#bdcaba", "secondary-container": "#fd761a", "inverse-on-surface": "#eef0ff", "on-tertiary-container": "#fdfcff", "surface-container-low": "#f2f3ff", "on-error": "#ffffff", "tertiary": "#4f5d71", "secondary-fixed-dim": "#ffb690", "surface": "#faf8ff", "on-surface": "#131b2e", "secondary-fixed": "#ffdbca", "on-error-container": "#93000a", "surface-tint": "#006e2d", "inverse-surface": "#283044", "surface-bright": "#faf8ff", "surface-dim": "#d2d9f4", "primary-fixed": "#7ffc97", "on-surface-variant": "#3e4a3d", "surface-container-high": "#e2e7ff", "surface-variant": "#dae2fd", "on-tertiary": "#ffffff", "outline": "#6e7b6c", "on-primary-fixed-variant": "#005320", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#3a485b", "on-background": "#131b2e", "on-primary-fixed": "#002109", "on-primary": "#ffffff", "primary": "#006b2c", "on-primary-container": "#f7fff2", "on-secondary-fixed": "#341100" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.5rem", "margin": "1rem", "space-xl": "2rem", "space-xs": "0.25rem", "gutter": "1rem", "space-md": "1rem", "space-sm": "0.5rem" }, fontFamily: { "body-md": ["Inter"], "display-lg": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"], "caption": ["Inter"], "title-md": ["Inter"], "headline-lg": ["Inter"], "headline-md": ["Inter"], "label-md": ["Inter"] }, fontSize: { "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }], "display-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "500" }], "caption": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "500" }], "title-md": ["18px", { lineHeight: "24px", fontWeight: "600" }], "headline-lg": ["24px", { lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "500" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Volver" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Ritmo Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XuD_Ai43ZpCte8V42yNjJrFhJHp6Y2Mt161Z8vbPwgq8XG1MFuu3GmwNTj0fng89geIF-gaZ80t75loPOG-6vrDqA2OE0PU6hsQ-Z1BFYiW6Z6CoxY7CYsYZZ3H1Rfmf7sqWDUbr-1cwCxmcz3oNvFL-SIQjZmXxDNQgfyp_mqss1FueghPUOUhYALXHqrt8S3Osv10NpfK8yApJm2Tam56PwmpbDy6Iy-JT0Pk-OPeOO5dsOVmXb_cw"/><span class="font-title-md text-title-md text-on-surface ml-1">Ritmo</span></div><div class="flex items-center gap-space-sm"><span class="hidden font-label-md text-label-md text-on-surface-variant font-medium">Paso 2: Nivel</span><a class="min-h-[44px] min-w-[44px] px-3 flex items-center justify-center font-label-md text-label-md text-primary font-semibold hover:opacity-80 transition-opacity" data-path="bienvenida-ritmo" href="#">Omitir</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full px-margin pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-8">
+<div class="flex flex-col gap-space-sm pt-2 mb-space-lg">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant font-semibold uppercase tracking-wider">Paso 2 de 3</span>
+<span class="font-caption text-caption text-primary font-bold">66% completado</span>
+</div>
+<div class="w-full h-2 bg-surface-container-high rounded-full overflow-hidden flex gap-1 p-0.5">
+<div class="h-full w-1/3 bg-primary rounded-full transition-all duration-300"></div>
+<div class="h-full w-1/3 bg-primary rounded-full transition-all duration-300"></div>
+<div class="h-full w-1/3 bg-surface-container-highest rounded-full transition-all duration-300"></div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">¿Qué actividades haces?</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Selecciona una o varias para sugerirte entrenamientos y métricas adaptadas a tu ritmo.</p>
+</div>
+<div class="grid grid-cols-2 gap-space-md mb-space-lg" id="activity-grid">
+<button aria-pressed="true" class="activity-card group relative flex flex-col items-center justify-center p-space-md rounded-2xl bg-surface-container-lowest shadow-sm text-left transition-all duration-200 min-h-[120px] focus:outline-none" data-activity="caminar" type="button">
+<div class="status-indicator absolute top-3 right-3 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-xs transition-transform duration-150">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="icon-wrapper w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed mb-space-xs transition-colors">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">directions_walk</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold transition-colors">Caminar</span>
+<span class="font-caption text-caption text-on-surface-variant mt-0.5">Ritmo diario</span>
+</button>
+<button aria-pressed="true" class="activity-card group relative flex flex-col items-center justify-center p-space-md rounded-2xl bg-surface-container-lowest shadow-sm text-left transition-all duration-200 min-h-[120px] focus:outline-none" data-activity="correr" type="button">
+<div class="status-indicator absolute top-3 right-3 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-xs transition-transform duration-150">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="icon-wrapper w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed mb-space-xs transition-colors">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">directions_run</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold transition-colors">Correr</span>
+<span class="font-caption text-caption text-on-surface-variant mt-0.5">Cardio activo</span>
+</button>
+<button aria-pressed="false" class="activity-card group relative flex flex-col items-center justify-center p-space-md rounded-2xl bg-surface-container-low shadow-sm text-left transition-all duration-200 min-h-[120px] focus:outline-none" data-activity="bicicleta" type="button">
+<div class="status-indicator absolute top-3 right-3 w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center text-outline transition-transform duration-150">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</div>
+<div class="icon-wrapper w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant mb-space-xs transition-colors">
+<span class="material-symbols-outlined text-[28px]">directions_bike</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface font-semibold transition-colors">Bicicleta</span>
+<span class="font-caption text-caption text-on-surface-variant mt-0.5">Ruta o spinning</span>
+</button>
+<button aria-pressed="true" class="activity-card group relative flex flex-col items-center justify-center p-space-md rounded-2xl bg-surface-container-lowest shadow-sm text-left transition-all duration-200 min-h-[120px] focus:outline-none" data-activity="gimnasio" type="button">
+<div class="status-indicator absolute top-3 right-3 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-xs transition-transform duration-150">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="icon-wrapper w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed mb-space-xs transition-colors">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">fitness_center</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold transition-colors">Gimnasio</span>
+<span class="font-caption text-caption text-on-surface-variant mt-0.5">Fuerza & pesas</span>
+</button>
+<button aria-pressed="false" class="activity-card group relative flex flex-col items-center justify-center p-space-md rounded-2xl bg-surface-container-low shadow-sm text-left transition-all duration-200 min-h-[120px] focus:outline-none" data-activity="yoga" type="button">
+<div class="status-indicator absolute top-3 right-3 w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center text-outline transition-transform duration-150">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</div>
+<div class="icon-wrapper w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant mb-space-xs transition-colors">
+<span class="material-symbols-outlined text-[28px]">self_improvement</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface font-semibold transition-colors">Yoga</span>
+<span class="font-caption text-caption text-on-surface-variant mt-0.5">Flexibilidad</span>
+</button>
+<button aria-pressed="false" class="activity-card group relative flex flex-col items-center justify-center p-space-md rounded-2xl bg-surface-container-low shadow-sm text-left transition-all duration-200 min-h-[120px] focus:outline-none" data-activity="natacion" type="button">
+<div class="status-indicator absolute top-3 right-3 w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center text-outline transition-transform duration-150">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</div>
+<div class="icon-wrapper w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant mb-space-xs transition-colors">
+<span class="material-symbols-outlined text-[28px]">pool</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface font-semibold transition-colors">Natación</span>
+<span class="font-caption text-caption text-on-surface-variant mt-0.5">Bajo impacto</span>
+</button>
+</div>
+<div class="flex items-center gap-space-md p-space-md bg-surface-container-high rounded-2xl shadow-sm mb-space-lg">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[22px]">lightbulb</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface leading-tight">
+      Puedes registrar cualquier otro deporte más adelante desde la pantalla de inicio o sincronizar tus dispositivos.
+    </p>
+</div>
+<div class="flex items-center justify-between p-space-md bg-surface-container-lowest rounded-2xl shadow-sm mb-space-xl">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Personalización guiada</span>
+<span class="font-caption text-caption text-on-surface-variant">Calibrando metas diarias</span>
+</div>
+</div>
+<div class="flex items-center text-primary font-caption text-caption font-semibold">
+<span id="selected-counter">3</span> elegidas
+    </div>
+</div>
+<div class="flex flex-col gap-space-sm mt-auto">
+<a class="h-[52px] w-full bg-primary text-on-primary rounded-2xl flex items-center justify-center gap-space-sm font-label-md text-label-md font-semibold shadow-md active:scale-[0.99] transition-all" data-path="onboarding-paso-3" href="#" id="btn-continue">
+<span>Continuar</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<button class="h-12 w-full bg-transparent text-on-surface-variant rounded-2xl flex items-center justify-center font-label-md text-label-md font-medium hover:bg-surface-container-high transition-colors" onclick="history.back()" type="button">
+      Volver al paso anterior
+    </button>
+</div>
+</div>
+<script>
+  (function() {
+    const cards = document.querySelectorAll('.activity-card');
+    const counter = document.getElementById('selected-counter');
+
+    function updateCount() {
+      const activeCount = document.querySelectorAll('.activity-card[aria-pressed="true"]').length;
+      if (counter) counter.textContent = activeCount;
+    }
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const isSelected = card.getAttribute('aria-pressed') === 'true';
+        const nextState = !isSelected;
+        card.setAttribute('aria-pressed', nextState ? 'true' : 'false');
+
+        const indicator = card.querySelector('.status-indicator');
+        const indicatorIcon = indicator.querySelector('.material-symbols-outlined');
+        const iconWrapper = card.querySelector('.icon-wrapper');
+        const icon = iconWrapper.querySelector('.material-symbols-outlined');
+        const title = card.querySelector('.font-title-md');
+
+        if (nextState) {
+          card.classList.remove('bg-surface-container-low');
+          card.classList.add('bg-surface-container-lowest');
+
+          indicator.classList.remove('bg-surface-container-high', 'text-outline');
+          indicator.classList.add('bg-primary', 'text-on-primary');
+          indicatorIcon.textContent = 'check';
+
+          iconWrapper.classList.remove('bg-surface-container', 'text-on-surface-variant');
+          iconWrapper.classList.add('bg-primary-fixed', 'text-on-primary-fixed');
+          icon.style.fontVariationSettings = "'FILL' 1";
+
+          title.classList.remove('text-on-surface');
+          title.classList.add('text-primary');
+        } else {
+          card.classList.remove('bg-surface-container-lowest');
+          card.classList.add('bg-surface-container-low');
+
+          indicator.classList.remove('bg-primary', 'text-on-primary');
+          indicator.classList.add('bg-surface-container-high', 'text-outline');
+          indicatorIcon.textContent = 'add';
+
+          iconWrapper.classList.remove('bg-primary-fixed', 'text-on-primary-fixed');
+          iconWrapper.classList.add('bg-surface-container', 'text-on-surface-variant');
+          icon.style.fontVariationSettings = "'FILL' 0";
+
+          title.classList.remove('text-primary');
+          title.classList.add('text-on-surface');
+        }
+
+        updateCount();
+      });
+    });
+  })();
+</script></main></body></html>
